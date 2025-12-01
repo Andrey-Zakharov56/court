@@ -61,7 +61,7 @@ function showStartScreen() {
         <div class="start-screen">
             <div class="role-instruction">
                 <h3><i class="fas fa-info-circle"></i> ИНСТРУКЦИЯ ДЛЯ ВСЕХ УЧАСТНИКОВ</h3>
-                <p><strong>Дело №${caseNum} - "ГОВОРИ!"</strong></p>
+                <p><strong>Дело №${caseNum}</strong></p>
                 <p>Подсудимый обвиняется в абсурдном преступлении. Ваша задача — выиграть судебный процесс!</p>
                 
                 <h4>Правила игры:</h4>
