@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Суд игры: ГОВОРИ!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка суда -->
+        <header class="court-header">
+            <div class="court-seal">
+                <i class="fas fa-balance-scale"></i>
+            </div>
+            <h1>ВЕРХОВНЫЙ СУД <span class="game-title">"ГОВОРИ!"</span></h1>
+            <p class="court-id">Дело № <span id="case-number">035</span></p>
+        </header>
+
+        <!-- Панель выбора роли -->
+        <section class="role-selection">
+            <h2><i class="fas fa-user-tie"></i> ВЫБЕРИТЕ СВОЮ РОЛЬ В ДЕЛЕ</h2>
+            <div class="role-buttons">
+                <button id="role-judge" class="role-btn judge">
+                    <div class="role-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="role-info">
+                        <h3>СУДЬЯ</h3>
+                        <p>Ведите процесс</p>
+                    </div>
+                </button>
+                
+                <button id="role-accused" class="role-btn accused">
+                    <div class="role-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="role-info">
+                        <h3>ПОДСУДИМЫЙ</h3>
+                        <p>Защищайтесь</p>
+                    </div>
+                </button>
+                
+                <button id="role-victim" class="role-btn victim">
+                    <div class="role-icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                    <div class="role-info">
+                        <h3>ПОТЕРПЕВШИЙ</h3>
+                        <p>Выдвигайте обвинения</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Основное игровое поле (меняется в зависимости от роли) -->
+        <main id="game-main" class="game-main">
+            <!-- Здесь будет динамически меняться контент -->
+        </main>
+
+        <!-- Подвал -->
+        <footer class="court-footer">
+            <div class="footer-content">
+                <div class="court-stamp">
+                    <i class="fas fa-stamp"></i>
+                    <span>ОФИЦИАЛЬНЫЙ СУДЕБНЫЙ ИНСТРУМЕНТ</span>
+                </div>
+                <p class="footer-note">Игра для 3 человек • Версия 2.0 • Адаптировано для мобильных устройств</p>
+                <p class="footer-credits">Карточки сгенерированы ИИ • Суд скорый и правый</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для полного списка карт -->
+    <div id="cards-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Сюда загружаются карты -->
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
